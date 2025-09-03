@@ -15,90 +15,110 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Mark Angelo Dizon — Professional Profile</title>
-  <meta name="description" content="Professional profile of Your Name — developer and designer.">
-  <style>
-    /* ===== Style guide (editable) =====
-       This block is intentionally short and clear so beginners can customize the
-       page without hunting through many rules. Edit the variables to change
-       colors and the few layout values to change spacing.
+  <meta name="description" content="Professional profile of Mark Angelo Dizon — developer and designer.">
+<style>
+  /* ===== Style guide (editable) =====
+     This block is intentionally short and clear so beginners can customize the
+     page without hunting through many rules. Edit the variables to change
+     colors and the few layout values to change spacing.
 
-       Quick steps for students:
-       1) Change the colors: edit values inside :root (see names and purpose).
-       2) Change spacing: edit .wrap padding or section padding values.
-       3) Add a dark theme: copy the :root block and override variables under
-          an html.dark selector.
+     Quick steps for students:
+     1) Change the colors: edit values inside :root (see names and purpose).
+     2) Change spacing: edit .wrap padding or section padding values.
+     3) Add a dark theme: copy the :root block and override variables under
+        an html.dark selector.
 
-       Variable meanings:
-         --bg     : page background color
-         --text   : main, high-contrast text color
-         --muted  : secondary or hint text color
-         --accent : primary color used for buttons and links
-         --card   : background for cards/panels
-    */
+     Variable meanings:
+       --bg     : page background color
+       --text   : main, high-contrast text color
+       --muted  : secondary or hint text color
+       --accent : primary color used for buttons and links
+       --card   : background for cards/panels
+  */
 
-    /* --- Colors & basic tokens (edit these) --- */
-    :root{
-      --bg: #edf3f5;    /* page background */
-      --text: #0f1720;  /* main text */
-      --muted: #6b7280; /* muted/secondary */
-      --accent: #2e08d4;/* buttons / links */
-      --card: #f8fafc;  /* cards / panels */
-    }
+  /* --- Colors & basic tokens (edit these) --- */
+  :root {
+    --bg: #ffffff;    /* page background */
+    --text: #0f1720;  /* main text */
+    --muted: #6b7280; /* muted/secondary */
+    --accent: #0ea5a9;/* buttons / links */
+    --card: #f8fafc;  /* cards / panels */
+  }
 
-    /* --- Base rules (usually no change needed) --- */
-    * { box-sizing: border-box; }
-    html, body { height: 100%; }
-    body {
-      margin: 0;
-      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-      background: var(--bg);
-      color: var(--text);
-      -webkit-font-smoothing: antialiased;
-    }
+  /* --- Base rules (usually no change needed) --- */
+  * { box-sizing: border-box; }
+  html, body { height: 100%; }
+  body {
+    margin: 0;
+    font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    background: var(--bg);
+    color: var(--text);
+    -webkit-font-smoothing: antialiased;
+  }
 
-    /* --- Layout tokens (adjust these to change spacing) --- */
-    .wrap { max-width: 920px; margin: 0 auto; padding: 28px; }
+  /* --- Layout tokens (adjust these to change spacing) --- */
+  .wrap { max-width: 920px; margin: 0 auto; padding: 28px; }
 
-    /* Header */
-    header {
-      display: flex; align-items: center; justify-content: space-between;
-      padding: 18px 0; border-bottom: 1px solid #eef2f5;
-    }
-    .brand { font-weight: 700; letter-spacing: 0.3px; }
-    nav a { margin-left: 16px; color: var(--muted); text-decoration: none; font-size: 0.95rem; }
+  /* Header */
+  header {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 18px 0; border-bottom: 1px solid #eef2f5;
+  }
+  .brand { font-weight: 700; letter-spacing: 0.3px; }
+  nav a { margin-left: 16px; color: var(--muted); text-decoration: none; font-size: 0.95rem; }
 
-    /* Hero */
-    .hero { padding: 48px 0; }
-    h1 { margin: 0 0 8px; font-size: 1.6rem; }
-    .lead { color: var(--muted); max-width: 58ch; margin: 6px 0 18px; }
+  /* Hero */
+  .hero { padding: 48px 0; }
+  h1 { margin: 0 0 8px; font-size: 1.6rem; }
+  .lead { color: var(--muted); max-width: 58ch; margin: 6px 0 18px; }
 
-    /* Buttons */
-    .btn { display: inline-block; padding: 8px 14px; border-radius: 8px; background: var(--accent); color: #fff; text-decoration: none; }
+  /* Buttons */
+  .btn { display: inline-block; padding: 8px 14px; border-radius: 8px; background: var(--accent); color: #fff; text-decoration: none; }
 
-    /* Misc */
-    .muted { color: var(--muted); }
-    section { padding: 28px 0; border-bottom: 1px solid #f1f5f9; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; }
-    .card { background: var(--card); padding: 14px; border-radius: 8px; }
-    footer { padding: 18px 0; text-align: center; color: var(--muted); font-size: 0.9rem; }
+  /* Misc */
+  .muted { color: var(--muted); }
+  section { padding: 28px 0; border-bottom: 1px solid #f1f5f9; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; }
+  .card { background: var(--card); padding: 14px; border-radius: 8px; }
+  footer { padding: 18px 0; text-align: center; color: var(--muted); font-size: 0.9rem; }
 
-    /* --- Responsive tweaks --- */
-    @media (max-width: 680px) {
-      .wrap { padding: 16px; }
-      .hero { padding: 28px 0; }
-      nav a { margin-left: 8px; }
-    }
+  /* --- Responsive tweaks --- */
+  @media (max-width: 680px) {
+    .wrap { padding: 16px; }
+    .hero { padding: 28px 0; }
+    nav a { margin-left: 8px; }
+  }
 
-    /* --- Example dark theme (uncomment to use) ---
-    html.dark {
+  /* --- Example dark theme (uncomment to use) ---
+  html.dark {
+    --bg: #0b1220;
+    --text: #e6eef6;
+    --muted: #9aa6b2;
+    --accent: #60a5fa;
+    --card: #0f1724;
+  }
+  */
+
+  /* --- Active dark theme (system preference or html.dark) --- */
+  html.dark {
+    --bg: #0b1220;
+    --text: #e6eef6;
+    --muted: #9aa6b2;
+    --accent: #60a5fa;
+    --card: #0f1724;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
       --bg: #0b1220;
       --text: #e6eef6;
       --muted: #9aa6b2;
       --accent: #60a5fa;
       --card: #0f1724;
     }
-    */
-  </style>
+  }
+</style>
+
 </head>
 <body>
   <div class="wrap">
@@ -163,7 +183,7 @@
 
     <footer>
       <!-- Footer: update year/name if desired -->
-      &copy; <!-- -->2025 mark Angelo Dizon — Built with clarity.
+      &copy; <!-- -->2025 mark Angelo Dizon — Built with Passion.
     </footer>
   </div>
 </body>
